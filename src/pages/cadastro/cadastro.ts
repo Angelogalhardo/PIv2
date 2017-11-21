@@ -39,17 +39,19 @@ export class CadastroPage {
 
 
     this.http.post("https://carona-hfernan.c9users.io/usuarios", usuarios, options).subscribe(data =>{
-    let alert = this.alertCtrl.create({
-      title: 'Cadastrado com sucesso !',
-      buttons: ["OK"]
-    });
-    alert.present();
+    // let alert = this.alertCtrl.create({
+    //   title: 'Cadastrado com sucesso !',
+    //   buttons: ["OK"]
+    // });
+    // alert.present();
+    console.log(data);
     }, error =>{
-    let alert = this.alertCtrl.create({
-      title: 'Não foi possivel realizar seu cadastro !',
-      buttons: ["OK"]
-    });
-    alert.present();
+    // let alert = this.alertCtrl.create({
+    //   title: 'Não foi possivel realizar seu cadastro !',
+    //   buttons: ["OK"]
+    // });
+    // alert.present();
+    console.log(data);
     });
  }
 }
